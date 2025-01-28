@@ -67,7 +67,7 @@ SkillCraftr can evolve to include more topics, integrate with school systems, an
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/your-repo/SkillCraftr.git
+   git clone https://github.com/krishnapriya-n/skill-craftr.git
 ```
 
 2. Install dependencies
