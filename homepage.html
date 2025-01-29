@@ -15,19 +15,22 @@
 
     /* Full-Screen Background */
     body {
-      background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/7624377d00e106010f30a488dc23142576b54636/assets/website%20home%20page.png') no-repeat center center/cover;
+      background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/3fbd0026b97d333fb47b2a257b452042a5ec4b84/assets/website%20home%20page.png') no-repeat center center/cover;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start; /* Align the content to the start of the container */
+      align-items: flex-start; /* Align the content to the top */
+      height: 100%;
+      padding-top: 450px; /* Adjust this value to move the login box down */
+      padding-left: 750px;
     }
 
 
     /* Login Box */
     .login-container {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(53, 43, 43, 0.9);
       padding: 2rem;
       border-radius: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(162, 159, 159, 0.2);
       width: 300px;
       text-align: center;
     }
@@ -35,7 +38,7 @@
     .login-container h1 {
       margin-bottom: 1rem;
       font-size: 1.5rem;
-      color: #333;
+      color: #c8c8c8;
     }
 
     .login-container input {
@@ -48,7 +51,7 @@
     }
 
     .login-container button {
-      background-color: #007BFF;
+      background-color: #31020b;
       color: #fff;
       border: none;
       padding: 0.75rem;
@@ -59,7 +62,7 @@
     }
 
     .login-container button:hover {
-      background-color: #0056b3;
+      background-color: #1b0303;
     }
 
     .error-message {
