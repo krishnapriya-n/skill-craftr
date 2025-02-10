@@ -8,7 +8,7 @@ body, html {
 
 /* Default Background (Login Page) */
 body {
-  background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/3fbd0026b97d333fb47b2a257b452042a5ec4b84/assets/website%20home%20page.png') no-repeat center center/cover;
+  background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/website%20home%20page.png') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -29,7 +29,7 @@ body {
 /* Mobile View Backgrounds */
 @media (max-width: 768px) {
   /* Get Started Page Background (Mobile) */
-  .get-started-bg {
+  .body {
     background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg');
     background-repeat: no-repeat;
     background-position: center center;
