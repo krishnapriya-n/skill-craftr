@@ -6,7 +6,7 @@ body, html {
   height: 100%;
 }
 
-/* Default Background (Login Page) */
+/* Default Background for Login and Info Page (Desktop) */
 body {
   background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/website%20home%20page.png') no-repeat center center/cover;
   display: flex;
@@ -26,7 +26,7 @@ body {
   padding-top: 0;
 }
 
-/* Mobile View for Homepage Background */
+/* Mobile View Background for Homepage */
 @media (max-width: 768px) {
   /* Homepage Background for Mobile */
   body {
@@ -60,120 +60,88 @@ body {
   }
 }
 
-/* Login Box */
-.login-container {
-  background: rgba(53, 43, 43, 0.9);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(162, 159, 159, 0.2);
-  width: 300px;
+/* Get Started Page Container */
+.get-started-container {
   text-align: center;
-}
-
-.login-container h1 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: #c8c8c8;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-
-.login-container button {
-  background-color: #31020b;
-  color: #fff;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.login-container button:hover {
-  background-color: #1b0303;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.875rem;
-}
-
-/* Centered Container for Get Started Page */
-.container {
-  text-align: center;
+  padding: 3rem;
   color: white;
-  padding: 2rem;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto;
 }
 
-/* Button Styling */
-.btn {
-  display: inline-block;
-  background-color: #31020b;
-  color: white;
-  padding: 10px 20px;
-  margin: 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  min-width: 150px;
-  text-align: center;
+.get-started-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.btn:hover {
-  background-color: #1b0303;
+.get-started-container p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-/* Button Container */
-.button-container {
+.steps-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-around;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
-/* Media Queries for Mobile */
+.step {
+  background-color: #31020b;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  color: white;
+}
+
+.step h3 {
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #1b0303;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #31020b;
+}
+
+/* Mobile Adjustments for Get Started */
 @media (max-width: 768px) {
-  /* Center the content */
-  .container {
+  .get-started-container {
     padding: 1rem;
     width: 90%;
   }
 
-  /* Button Styling */
-  .btn {
+  .cta-button {
     font-size: 1rem;
-    min-width: 120px;
+    width: 80%;
+    padding: 0.75rem 1.5rem;
   }
 
-  /* Stack buttons vertically on smaller screens */
-  .button-container {
+  .steps-container {
     flex-direction: column;
-    gap: 10px;
   }
 }
 
+/* Smaller Device Adjustments */
 @media (max-width: 480px) {
-  /* Make the buttons smaller and ensure they fit on small screens */
-  .btn {
+  .cta-button {
     font-size: 0.9rem;
     min-width: 100px;
   }
 
-  /* Adjust container padding */
-  .container {
+  .get-started-container {
     padding: 0.8rem;
   }
 }
