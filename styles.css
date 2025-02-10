@@ -16,8 +16,8 @@ body {
   padding-top: 450px; /* Default for desktop */
 }
 
-/* Get Started Page Background (Desktop) */
-.get-started-bg {
+/* Info Page Background (Desktop) */
+.info-page-bg {
   background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/static.png') no-repeat center center/cover;
   display: flex;
   justify-content: center;
@@ -26,16 +26,10 @@ body {
   padding-top: 0;
 }
 
-/* Mobile View for Homepage Background */
+/* Mobile View for Info Page Background */
 @media (max-width: 768px) {
-  /* Homepage Background for Mobile */
-  body {
-    background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
-    padding-top: 300px; /* Increased padding for mobile to avoid pushing content too high */
-  }
-
-  /* Get Started Page Background (Mobile) */
-  .get-started-bg {
+  /* Info Page Background for Mobile */
+  .info-page-bg {
     background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -53,16 +47,10 @@ body {
   }
 }
 
-/* Get Started Page Background for Smaller Screens */
+/* Info Page Background for Smaller Screens */
 @media (max-width: 480px) {
-  /* Homepage Background for Smaller Mobile Devices */
-  body {
-    background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
-    padding-top: 250px; /* Reduced padding for smaller screens */
-  }
-
-  /* Get Started Page Background (Mobile) */
-  .get-started-bg {
+  /* Info Page Background for Smaller Mobile Devices */
+  .info-page-bg {
     background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg');
     background-repeat: no-repeat;
     background-position: center center;
