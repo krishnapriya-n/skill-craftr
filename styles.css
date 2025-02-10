@@ -44,12 +44,12 @@ body {
 
   /* Lower the Login Container for Mobile */
   .login-container {
-    padding-top: 30px; /* Lower the position */
+    padding-top: 40px; /* Lower the position */
   }
 
   /* Lower the Container for Info Page on Mobile */
   .container {
-    padding-top: 30px; /* Lower the position */
+    padding-top: 40px; /* Lower the position */
   }
 }
 
@@ -71,12 +71,12 @@ body {
 
   /* Lower the Login Container for Mobile */
   .login-container {
-    padding-top: 50px; /* Further lower the position */
+    padding-top: 60px; /* Further lower the position */
   }
 
   /* Lower the Container for Info Page on Mobile */
   .container {
-    padding-top: 50px; /* Further lower the position */
+    padding-top: 60px; /* Further lower the position */
   }
 }
 
