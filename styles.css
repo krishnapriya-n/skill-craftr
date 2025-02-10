@@ -27,6 +27,11 @@ body.info-bg {
   padding-top: 0;
 }
 
+/* Lower the Container for Info Page */
+body.info-bg .container {
+  margin-top: 180px; /* Pushes the container down */
+}
+
 /* Mobile View for Homepage Background */
 @media (max-width: 768px) {
   /* Homepage Background for Mobile */
@@ -53,6 +58,11 @@ body.info-bg {
   .container {
     padding-top: 40px;
   }
+
+  /* Lower the Info Page container */
+  body.info-bg .container {
+    margin-top: 80px;
+  }
 }
 
 /* Get Started Page & Info Page Background for Smaller Screens */
@@ -74,6 +84,11 @@ body.info-bg {
 
   .container {
     padding-top: 20px;
+  }
+
+  /* Lower the Info Page container on small screens */
+  body.info-bg .container {
+    margin-top: 60px;
   }
 }
 
@@ -122,7 +137,7 @@ body.info-bg {
   font-size: 0.875rem;
 }
 
-/* Centered Container for Get Started Page */
+/* Centered Container for Get Started & Info Pages */
 .container {
   text-align: center;
   color: white;
