@@ -41,6 +41,16 @@ body {
     background-position: center center;
     background-size: cover;
   }
+
+  /* Lower the Login Container for Mobile */
+  .login-container {
+    padding-top: 30px; /* Lower the position */
+  }
+
+  /* Lower the Container for Info Page on Mobile */
+  .container {
+    padding-top: 30px; /* Lower the position */
+  }
 }
 
 /* Get Started Page Background for Smaller Screens */
@@ -57,6 +67,16 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+
+  /* Lower the Login Container for Mobile */
+  .login-container {
+    padding-top: 50px; /* Further lower the position */
+  }
+
+  /* Lower the Container for Info Page on Mobile */
+  .container {
+    padding-top: 50px; /* Further lower the position */
   }
 }
 
@@ -176,4 +196,20 @@ body {
   .container {
     padding: 0.8rem;
   }
+}
+
+/* Align steps to left for Info Page */
+.steps-container {
+  text-align: left; /* Align steps to the left */
+  color: white;
+  margin-top: 2rem;
+}
+
+.step {
+  margin-bottom: 1.5rem;
+}
+
+.step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
