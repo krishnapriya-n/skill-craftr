@@ -43,7 +43,7 @@ body {
 
   /* Move Login Box Higher on Mobile */
   .login-container {
-    margin-top: 50px;  /* Moves the container up */
+    margin-top: 80px;  /* Moves the container up */
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(162, 159, 159, 0.2);
