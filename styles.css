@@ -16,8 +16,8 @@ body {
   padding-top: 450px; /* Default for desktop */
 }
 
-/* Get Started Page Background (Desktop) */
-.get-started-bg {
+/* Get Started & Info Page Background (Desktop) */
+.get-started-bg, .info-bg {
   background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/static.png') no-repeat center center/cover;
   display: flex;
   justify-content: center;
@@ -34,8 +34,8 @@ body {
     padding-top: 300px; /* Adjusted padding for better positioning */
   }
 
-  /* Get Started Page Background (Mobile) */
-  .get-started-bg {
+  /* Get Started & Info Page Background (Mobile) */
+  .get-started-bg, .info-bg {
     background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -43,7 +43,7 @@ body {
   }
 }
 
-/* Get Started Page Background for Smaller Screens */
+/* Get Started & Info Page Background for Smaller Screens */
 @media (max-width: 480px) {
   /* Homepage Background for Smaller Mobile Devices */
   body {
@@ -51,8 +51,8 @@ body {
     padding-top: 250px; /* Slightly lower for very small screens */
   }
 
-  /* Get Started Page Background (Mobile) */
-  .get-started-bg {
+  /* Get Started & Info Page Background (Mobile) */
+  .get-started-bg, .info-bg {
     background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -60,52 +60,7 @@ body {
   }
 }
 
-/* Login Box */
-.login-container {
-  background: rgba(53, 43, 43, 0.9);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(162, 159, 159, 0.2);
-  width: 300px;
-  text-align: center;
-}
-
-.login-container h1 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: #c8c8c8;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-
-.login-container button {
-  background-color: #31020b;
-  color: #fff;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.login-container button:hover {
-  background-color: #1b0303;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.875rem;
-}
-
-/* Centered Container for Get Started Page */
+/* Centered Container for Get Started and Info Pages */
 .container {
   text-align: center;
   color: white;
