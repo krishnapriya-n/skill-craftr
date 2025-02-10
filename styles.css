@@ -26,11 +26,16 @@ body {
   padding-top: 0;
 }
 
-/* Mobile View Backgrounds */
+/* Mobile View for Homepage Background */
 @media (max-width: 768px) {
+  /* Homepage Background for Mobile */
+  body {
+    background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
+  }
+  
   /* Get Started Page Background (Mobile) */
-  .body {
-    background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg');
+  .get-started-bg {
+    background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -39,6 +44,12 @@ body {
 
 /* Get Started Page Background for Smaller Screens */
 @media (max-width: 480px) {
+  /* Homepage Background for Smaller Mobile Devices */
+  body {
+    background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
+  }
+
+  /* Get Started Page Background (Mobile) */
   .get-started-bg {
     background-image: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg');
     background-repeat: no-repeat;
@@ -46,6 +57,7 @@ body {
     background-size: cover;
   }
 }
+
 
 /* Login Box */
 .login-container {
