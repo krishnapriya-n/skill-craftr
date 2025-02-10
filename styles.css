@@ -16,7 +16,7 @@ body {
   padding-top: 450px;
 }
 
-/* Get Started Page Background */
+/* Get Started Page Background (Desktop) */
 .get-started-bg {
   background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/static.png') no-repeat center center/cover;
   display: flex;
@@ -24,6 +24,21 @@ body {
   align-items: center;
   height: 100vh;
   padding-top: 0;
+}
+
+/* Mobile View Backgrounds */
+@media (max-width: 768px) {
+  /* Get Started Page Background (Mobile) */
+  .get-started-bg {
+    background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
+  }
+}
+
+/* Get Started Page Background for Smaller Screens */
+@media (max-width: 480px) {
+  .get-started-bg {
+    background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20static.jpg') no-repeat center center/cover;
+  }
 }
 
 /* Login Box */
