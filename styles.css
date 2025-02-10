@@ -40,6 +40,16 @@ body {
     background-position: center center;
     background-size: cover;
   }
+
+  /* Move Login Box Higher on Mobile */
+  .login-container {
+    margin-top: 50px;  /* Moves the container up */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(162, 159, 159, 0.2);
+    width: 300px;
+    text-align: center;
+  }
 }
 
 /* Get Started Page Background for Smaller Screens */
@@ -56,8 +66,17 @@ body {
     background-position: center center;
     background-size: cover;
   }
-}
 
+  /* Move Login Box Higher on Smaller Mobile Screens */
+  .login-container {
+    margin-top: 30px;  /* Adjusts the container's position higher */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(162, 159, 159, 0.2);
+    width: 280px;
+    text-align: center;
+  }
+}
 
 /* Login Box */
 .login-container {
