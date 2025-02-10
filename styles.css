@@ -10,10 +10,10 @@ body, html {
 body {
   background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/3fbd0026b97d333fb47b2a257b452042a5ec4b84/assets/website%20home%20page.png') no-repeat center center/cover;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align the content to the top */
+  justify-content: center;
+  align-items: flex-start;
   height: 100%;
-  padding-top: 450px; /* Move the login box down */
+  padding-top: 450px;
 }
 
 /* Get Started Page Background */
@@ -80,6 +80,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 600px;
+  width: 100%;
 }
 
 /* Button Styling */
@@ -88,34 +89,57 @@ body {
   background-color: #31020b;
   color: white;
   padding: 10px 20px;
-  margin: 20px 0;
+  margin: 20px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.2rem;
+  min-width: 150px;
+  text-align: center;
 }
 
 .btn:hover {
   background-color: #1b0303;
 }
 
-/* Navigation Links */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  /* Center the content */
+  .container {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  /* Button Styling */
+  .btn {
+    font-size: 1rem;
+    min-width: 120px;
+  }
+
+  /* Stack buttons vertically on smaller screens */
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
+@media (max-width: 480px) {
+  /* Make the buttons smaller and ensure they fit on small screens */
+  .btn {
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
+  /* Adjust container padding */
+  .container {
+    padding: 0.8rem;
+  }
 }
