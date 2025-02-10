@@ -31,7 +31,7 @@ body {
   /* Homepage Background for Mobile */
   body {
     background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
-    padding-top: 200px; /* Reduced padding for mobile to move the content higher */
+    padding-top: 300px; /* Adjusted padding for better positioning */
   }
 
   /* Get Started Page Background (Mobile) */
@@ -48,7 +48,7 @@ body {
   /* Homepage Background for Smaller Mobile Devices */
   body {
     background: url('https://raw.githubusercontent.com/krishnapriya-n/skill-craftr/main/assets/mobile%20homepage.jpg') no-repeat center center/cover;
-    padding-top: 100px; /* Further reduced padding for smaller screens */
+    padding-top: 250px; /* Slightly lower for very small screens */
   }
 
   /* Get Started Page Background (Mobile) */
