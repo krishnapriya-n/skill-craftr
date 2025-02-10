@@ -74,9 +74,9 @@ body {
     padding-top: 60px; /* Further lower the position */
   }
 
-  /* Lower the Container for Info Page on Mobile */
+  /* Push Info Page Container Higher for Mobile */
   .container {
-    padding-top: 60px; /* Further lower the position */
+    padding-top: 20px; /* Adjusted to push the container higher */
   }
 }
 
