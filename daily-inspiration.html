@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Inspiration - SkillCraftr</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inspiration-bg">
+  <div class="container">
+    <h1>Daily Inspiration</h1>
+    <p id="inspiration-text">Loading your daily inspiration...</p>
+    <button class="btn" onclick="generateInspiration()">Get New Inspiration</button>
+    <a href="get-started.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    // Simulated user interests (to be replaced with chatbot data)
+    const userInterests = localStorage.getItem("userInterests") 
+      ? JSON.parse(localStorage.getItem("userInterests")) 
+      : [];
+
+    // General inspiration pool
+    const generalInspirations = [
+      "Bill Gates once said, 'Your most unhappy customers are your greatest source of learning.'",
+      "Elon Musk: 'When something is important enough, you do it even if the odds are not in your favor.'",
+      "Marie Curie: 'Nothing in life is to be feared, it is only to be understood.'"
+    ];
+
+    // Career-based inspirations
+    const careerInspirations = {
+      "AI/ML": [
+        "Andrew Ng: 'AI is the new electricity.' Stay curious and keep building!",
+        "Geoffrey Hinton: 'To solve intelligence, we need more than just data—we need imagination!'",
+        "Fei-Fei Li: 'AI will change the world, but only if we teach it well.' Keep learning!"
+      ],
+      "Cybersecurity": [
+        "Kevin Mitnick: 'Security is not a product, but a process.' Keep refining your skills!",
+        "Bruce Schneier: 'Amateurs hack systems, professionals hack people.' Stay sharp!",
+        "Parisa Tabriz (Google Security): 'Be the hacker who defends, not attacks.'"
+      ],
+      "Entrepreneurship": [
+        "Steve Jobs: 'Your time is limited, so don’t waste it living someone else’s life.'",
+        "Richard Branson: 'Business opportunities are like buses, there’s always another one coming!'",
+        "Oprah Winfrey: 'Do what you have to do until you can do what you want to do.'"
+      ]
+    };
+
+    function generateInspiration() {
+      let inspiration;
+      if (userInterests.length > 0) {
+        // Pick a random career-based inspiration
+        const interest = userInterests[Math.floor(Math.random() * userInterests.length)];
+        inspiration = careerInspirations[interest] 
+          ? careerInspirations[interest][Math.floor(Math.random() * careerInspirations[interest].length)] 
+          : generalInspirations[Math.floor(Math.random() * generalInspirations.length)];
+      } else {
+        // Default to general inspiration
+        inspiration = generalInspirations[Math.floor(Math.random() * generalInspirations.length)];
+      }
+
+      document.getElementById("inspiration-text").textContent = inspiration;
+    }
+
+    // Generate on page load
+    window.onload = generateInspiration;
+  </script>
+</body>
+</html>
